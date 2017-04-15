@@ -1,6 +1,6 @@
 package demo.fixer.controller;
 
-import org.springframework.boot.autoconfigure.web.ErrorController;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -10,23 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Controller for currency rate service index page.
  */
-public class IndexController implements ErrorController {
-
-    private static final String ERROR_PATH = "/error";
+@Controller
+public class IndexController {
 
     @RequestMapping("/")
     public String index() {
         return "index";
-    }
-
-    @RequestMapping(value = ERROR_PATH)
-    public String error() {
-        return "error";
-    }
-
-    @Override
-    public String getErrorPath() {
-        return ERROR_PATH;
     }
 
 }
