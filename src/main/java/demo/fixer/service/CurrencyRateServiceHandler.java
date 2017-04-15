@@ -56,7 +56,7 @@ public class CurrencyRateServiceHandler implements Constants {
 
         if (!StringUtils.isEmpty(timestamp)) {
             try {
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FORMAT);
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat(TIMESTAMP_DATE_FORMAT);
                 simpleDateFormat.parse(timestamp);
             } catch (ParseException e) {
                 return ERROR_MESSAGE_PREFIX_INVALID_TIMESTAMP + timestamp;
