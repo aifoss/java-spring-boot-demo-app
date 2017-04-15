@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en">
+    <title>Get Currency Rates</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+    <h1 align="center">Currency Rate Form</h1>
+    <form align="center" action="#" th:action="@{/rates}" th:object="${request}" method="get">
+        <p>Base: <input type="text" th:field="*{base}"/></p>
+        <p>Target: <input type="text" th:field="*{target}"/></p>
+        <p>Timestamp: <input type="text" th:field="*{timestamp}"/></p>
+        <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+    </form>
+</body>
+
+</html>
