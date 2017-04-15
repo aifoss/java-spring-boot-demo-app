@@ -1,0 +1,5 @@
+demo/fixer/controller/CurrencyRateServiceControllerTest.class
+demo/fixer/service/CurrencyRateServiceImplTest.class
+demo/fixer/TestConstants.class
+demo/fixer/TestHelper.class
+demo/fixer/FixerDemoApplicationTest.class

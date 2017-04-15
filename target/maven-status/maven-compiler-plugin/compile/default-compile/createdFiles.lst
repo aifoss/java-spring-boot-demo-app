@@ -1,0 +1,17 @@
+demo/fixer/constant/Constants.class
+demo/fixer/controller/ErrorPageController.class
+demo/fixer/datamodel/Currency.class
+demo/fixer/model/FixerError.class
+demo/fixer/model/Status.class
+demo/fixer/model/Result.class
+demo/fixer/datamodel/CurrencyRate.class
+demo/fixer/service/CurrencyRateServiceImpl.class
+demo/fixer/service/CurrencyRateService.class
+demo/fixer/model/Request.class
+demo/fixer/service/CurrencyRateServiceHelper.class
+demo/fixer/controller/IndexController.class
+demo/fixer/model/Status$StatusCode.class
+demo/fixer/controller/CurrencyRateFormController.class
+demo/fixer/service/CurrencyRateServiceHandler.class
+demo/fixer/controller/CurrencyRateServiceController.class
+demo/fixer/FixerDemoApplication.class

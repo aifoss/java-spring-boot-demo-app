@@ -1,0 +1,16 @@
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/datamodel/Currency.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/model/Status.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/controller/ErrorPageController.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/FixerDemoApplication.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/service/CurrencyRateServiceImpl.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/datamodel/CurrencyRate.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/service/CurrencyRateServiceHandler.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/model/Result.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/service/CurrencyRateServiceHelper.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/model/FixerError.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/controller/CurrencyRateServiceController.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/controller/IndexController.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/service/CurrencyRateService.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/controller/CurrencyRateFormController.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/model/Request.java
+/Users/sofia/Projects/workspace/github/fixer-demo/src/main/java/demo/fixer/constant/Constants.java
