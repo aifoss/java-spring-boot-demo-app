@@ -1,4 +1,4 @@
-package demo.fixer.service;
+package demo.fixer.handler;
 
 import demo.fixer.constant.Constants;
 import demo.fixer.datamodel.Currency;

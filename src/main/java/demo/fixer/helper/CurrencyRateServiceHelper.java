@@ -1,4 +1,4 @@
-package demo.fixer.service;
+package demo.fixer.helper;
 
 import demo.fixer.constant.Constants;
 import org.springframework.stereotype.Component;

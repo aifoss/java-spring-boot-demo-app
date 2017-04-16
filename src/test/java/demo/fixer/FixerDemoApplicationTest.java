@@ -1,5 +1,7 @@
 package demo.fixer;
 
+import demo.fixer.FixerDemoApplication;
+import demo.fixer.TestHelper;
 import demo.fixer.model.Result;
 import org.junit.Test;
 import org.junit.runner.RunWith;
