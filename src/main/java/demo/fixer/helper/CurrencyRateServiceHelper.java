@@ -56,7 +56,7 @@ public class CurrencyRateServiceHelper implements Constants {
             LOG.info("date output: "+dateStr);
 
             url += dateStr + "?";
-
+            
         } else {
             url += LATEST_API;
         }
