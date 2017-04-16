@@ -72,7 +72,7 @@ public class TestHelper implements Constants, TestConstants {
 
         Map<String, Double> currencyRateMap = (Map<String, Double>) currencyRate.getRates();
 
-        assertTrue(Currency.values().length - 1 == currencyRateMap.keySet().size());
+        assertTrue(Currency.values().length-1 == currencyRateMap.keySet().size());
         assertFalse(currencyRateMap.keySet().contains("USD"));
 
         Set<Currency> currencies = new HashSet<>(Arrays.asList(Currency.values()));
@@ -124,7 +124,7 @@ public class TestHelper implements Constants, TestConstants {
         assertEquals("USD", currencyRate.getBase());
         assertFalse(StringUtils.isEmpty(currencyRate.getDate()));
         assertTrue(currencyRate.getDate().matches(DATE_FORMAT));
-        assertEquals("2017-01-10", currencyRate.getDate());
+        assertEquals("2017-01-09", currencyRate.getDate());
         assertNotNull(currencyRate.getRates());
 
         Map<String, Double> currencyRateMap = (Map<String, Double>) currencyRate.getRates();

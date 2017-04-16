@@ -12,6 +12,7 @@ import org.springframework.util.StringUtils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -56,7 +57,7 @@ public class CurrencyRateServiceHandler implements Constants {
 
         if (!StringUtils.isEmpty(timestamp)) {
             try {
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat(TIMESTAMP_DATE_FORMAT);
+                DateFormat simpleDateFormat = new SimpleDateFormat(TIMESTAMP_DATE_INPUT_FORMAT);
                 simpleDateFormat.parse(timestamp);
             } catch (ParseException e) {
                 return ERROR_MESSAGE_PREFIX_INVALID_TIMESTAMP + timestamp;
