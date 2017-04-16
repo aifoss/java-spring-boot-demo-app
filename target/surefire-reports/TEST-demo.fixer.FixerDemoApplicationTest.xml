@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="demo.fixer.FixerDemoApplicationTest" time="1.51" tests="9" errors="0" skipped="0" failures="0">
+<testsuite name="demo.fixer.FixerDemoApplicationTest" time="1.44" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="14.1.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -12,7 +12,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7538"/>
+    <property name="idea.launcher.port" value="7539"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -63,13 +63,13 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|127.0.0.1"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testAppGetRatesWithInvalidTargetParamError" classname="demo.fixer.FixerDemoApplicationTest" time="0.301"/>
-  <testcase name="testAppGetRatesWithInvalidTimestampParamError" classname="demo.fixer.FixerDemoApplicationTest" time="0.008"/>
-  <testcase name="testAppGetRatesWithNoParamOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.239"/>
-  <testcase name="testAppGetRatesWithBaseTargetAndTimestampOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.249"/>
-  <testcase name="testAppGetRatesWithBaseParamOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.24"/>
+  <testcase name="testAppGetRatesWithInvalidTargetParamError" classname="demo.fixer.FixerDemoApplicationTest" time="0.252"/>
+  <testcase name="testAppGetRatesWithInvalidTimestampParamError" classname="demo.fixer.FixerDemoApplicationTest" time="0.007"/>
+  <testcase name="testAppGetRatesWithNoParamOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.24"/>
+  <testcase name="testAppGetRatesWithBaseTargetAndTimestampOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.233"/>
+  <testcase name="testAppGetRatesWithBaseParamOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.245"/>
   <testcase name="testAppGetRatesWithInvalidBaseParamError" classname="demo.fixer.FixerDemoApplicationTest" time="0.005"/>
-  <testcase name="testAppGetRatesWithBaseAndTargetOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.23"/>
-  <testcase name="contextLoads" classname="demo.fixer.FixerDemoApplicationTest" time="0.003"/>
-  <testcase name="testAppGetRatesWithInvalidTimestampParamException" classname="demo.fixer.FixerDemoApplicationTest" time="0.235"/>
+  <testcase name="testAppGetRatesWithBaseAndTargetOK" classname="demo.fixer.FixerDemoApplicationTest" time="0.229"/>
+  <testcase name="contextLoads" classname="demo.fixer.FixerDemoApplicationTest" time="0.002"/>
+  <testcase name="testAppGetRatesWithInvalidTimestampParamException" classname="demo.fixer.FixerDemoApplicationTest" time="0.227"/>
 </testsuite>

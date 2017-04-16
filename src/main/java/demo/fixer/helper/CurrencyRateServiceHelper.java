@@ -49,8 +49,7 @@ public class CurrencyRateServiceHelper implements Constants {
             Date date = dateFormat.parse(timestamp);
 
             dateFormat = new SimpleDateFormat(TIMESTAMP_DATE_OUTPUT_FORMAT);
-            dateFormat.format(date);
-            String dateStr = new SimpleDateFormat(TIMESTAMP_DATE_OUTPUT_FORMAT).format(date);
+            String dateStr = dateFormat.format(date);
 
             LOG.info("date input: "+timestamp);
             LOG.info("date output: "+dateStr);
