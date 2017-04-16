@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 /**
  * Created by sofia on 4/15/17.
@@ -39,7 +40,7 @@ public class CurrencyRateServiceImpl implements CurrencyRateService, Constants {
     public Result getRates(String base, String target, String timestamp) {
         // compose request URL
         String requestUrl = helper.getRequestUrl(base, target, timestamp);
-        LOG.info("requestUrl="+requestUrl);
+        LOG.info("requestUrl=" + requestUrl);
 
         // validate request params
         String errorMessage = handler.validateGetRatesParams(base, target, timestamp);
@@ -49,8 +50,13 @@ public class CurrencyRateServiceImpl implements CurrencyRateService, Constants {
         }
 
         // compose corresponding Fixer.io API URL
-        String fixerApiUrl = helper.getFixerApiUrl(base, target, timestamp);
-        LOG.info("fixerApiUrl="+fixerApiUrl);
+        String fixerApiUrl = "";
+        try {
+            fixerApiUrl = helper.getFixerApiUrl(base, target, timestamp);
+            LOG.info("fixerApiUrl=" + fixerApiUrl);
+        } catch (ParseException e) {
+
+        }
 
         String res = "";
         ObjectMapper mapper = new ObjectMapper();

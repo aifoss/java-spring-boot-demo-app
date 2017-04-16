@@ -18,7 +18,9 @@ public interface Constants {
 
     String DEFAULT_BASE_CURRENCY = "USD";
 
-    String TIMESTAMP_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
+    String TIMESTAMP_DATE_INPUT_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
+    String TIMESTAMP_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
+    String TIMESTAMP_DATE_OUTPUT_FORMAT = "yyyy-MM-dd";
 
     String OK_MESSAGE = "Currency rates successfully fetched";
 

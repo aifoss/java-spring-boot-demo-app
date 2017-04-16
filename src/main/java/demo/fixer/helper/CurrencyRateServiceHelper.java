@@ -1,8 +1,16 @@
 package demo.fixer.helper;
 
 import demo.fixer.constant.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * Created by sofia on 4/15/17.
@@ -13,6 +21,8 @@ import org.springframework.util.StringUtils;
  */
 @Component
 public class CurrencyRateServiceHelper implements Constants {
+
+    private static final Logger LOG = LoggerFactory.getLogger(CurrencyRateServiceHelper.class);
 
     /**
      * Helper method to compose currency rate service API request URL.
@@ -30,13 +40,23 @@ public class CurrencyRateServiceHelper implements Constants {
     /**
      * Helper method to compose Fixer.io API URL.
      */
-    public static String getFixerApiUrl(String base, String target, String timestamp) {
+    public static String getFixerApiUrl(String base, String target, String timestamp) throws ParseException {
         String url = FIXER_BASE_URL;
 
         if (!StringUtils.isEmpty(timestamp)) {
-            int idx = timestamp.indexOf("T");
-            String date = timestamp.substring(0, idx);
-            url += date + "?";
+            DateFormat dateFormat = new SimpleDateFormat(TIMESTAMP_DATE_FORMAT);
+            dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+            Date date = dateFormat.parse(timestamp);
+
+            dateFormat = new SimpleDateFormat(TIMESTAMP_DATE_OUTPUT_FORMAT);
+            dateFormat.format(date);
+            String dateStr = new SimpleDateFormat(TIMESTAMP_DATE_OUTPUT_FORMAT).format(date);
+
+            LOG.info("date input: "+timestamp);
+            LOG.info("date output: "+dateStr);
+
+            url += dateStr + "?";
+
         } else {
             url += LATEST_API;
         }

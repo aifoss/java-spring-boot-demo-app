@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: demo.fixer.service.CurrencyRateServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.253 sec - in demo.fixer.service.CurrencyRateServiceImplTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.152 sec - in demo.fixer.service.CurrencyRateServiceImplTest
