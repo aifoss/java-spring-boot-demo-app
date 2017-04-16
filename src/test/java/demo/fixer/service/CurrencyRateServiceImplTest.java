@@ -1,6 +1,8 @@
 package demo.fixer.service;
 
 import demo.fixer.TestHelper;
+import demo.fixer.handler.CurrencyRateServiceHandler;
+import demo.fixer.helper.CurrencyRateServiceHelper;
 import demo.fixer.model.Result;
 import org.junit.Before;
 import org.junit.Test;

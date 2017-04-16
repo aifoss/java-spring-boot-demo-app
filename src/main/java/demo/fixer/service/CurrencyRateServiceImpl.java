@@ -3,6 +3,8 @@ package demo.fixer.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import demo.fixer.constant.Constants;
 import demo.fixer.datamodel.CurrencyRate;
+import demo.fixer.handler.CurrencyRateServiceHandler;
+import demo.fixer.helper.CurrencyRateServiceHelper;
 import demo.fixer.model.FixerError;
 import demo.fixer.model.Result;
 import org.slf4j.Logger;
