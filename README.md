@@ -1,4 +1,4 @@
-# fixer-demo
+# java-spring-boot-demo-app
 
 Java Spring Boot Demo Application Using Fixer.io API
 
